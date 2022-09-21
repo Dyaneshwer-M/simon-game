@@ -83,7 +83,9 @@ function checkAnswer(x){
         $("body").removeClass("game-over");
     }, 200);
     $("h1").text("Game over press A key to restart");
+    setTimeout(function(){
     startOver();
+    }, 1000);
   }
 }
 
