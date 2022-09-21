@@ -56,16 +56,16 @@ $(document).keypress(function(event){
   }
 });
 
-$("body").click(function(){
+// $("body").click(function(){
 
 
-    if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
+//     if (!started) {
+//       $("#level-title").text("Level " + level);
+//       nextSequence();
+//       started = true;
+//     }
 
-});
+// });
 
 function checkAnswer(x){
   if(gamePattern[x] === clickedButton[x]){
