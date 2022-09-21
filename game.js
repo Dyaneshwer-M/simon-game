@@ -56,6 +56,17 @@ $(document).keypress(function(event){
   }
 });
 
+$(document).click(function(){
+  
+
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+
+});
+
 function checkAnswer(x){
   if(gamePattern[x] === clickedButton[x]){
     if(gamePattern.length === clickedButton.length){
